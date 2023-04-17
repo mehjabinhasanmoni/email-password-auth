@@ -25,14 +25,14 @@ const [email, setEmail] = useState('');
         console.log(event.target.value);
     }
     return (
-        <div>
+        <div className='w-50 mx-auto'>
             <h2> Please Register</h2>
             <form onSubmit={handelSubmit}>
-                <input onChange={handelEmailChange} type="email" name="email" id="email" placeholder='Your Email'/>
+                <input className='w-50 mb-4 rounded ps-2' onChange={handelEmailChange} type="email" name="email" id="email" placeholder='Your Email'/>
                 <br />
-                <input onBlur={handelPasswordBlur} type="password" name="password" id="password" placeholder='Your Password' />
+                <input className='w-50 mb-4 rounded ps-2' onBlur={handelPasswordBlur} type="password" name="password" id="password" placeholder='Your Password' />
                 <br />
-                <input type="submit" value="Register" />
+                <input className='btn btn-primary' type="submit" value="Register" />
             </form>
         </div>
     );
